@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="./js/script.js"></script>
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
@@ -25,49 +26,52 @@
   <body>
     <main class="container">
       <div class="content">
-        <img src="images/logo.svg" alt="" class="content__logo" />
+        <img src="images/logo.svg" alt="" class="content__logo wrapper" />
         <div class="content__picture"></div>
-        <div class="content__box">
-          <h1 class="content__heading">
-            <span class="content__span">We're</span> coming soon
-          </h1>
-          <p class="content__paragraph">
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-
-          <div class="content__email-box">
-            <form action="">
+        <div class="content__grid">
+          <div class="content__box wrapper">
+            <h1 class="content__heading">
+              <span class="content__span">We're</span> coming soon
+            </h1>
+            <p class="content__paragraph">
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+            <form action="#" class="content__email-box">
               <input
                 type="email"
                 class="content__email"
                 placeholder="Email Address"
               />
+              <img
+                class="content__error"
+                src="./images/icon-error.svg"
+                alt=""
+              />
+              <button class="content__button" type="submit" value="Submit">
+                <img src="images/icon-arrow.svg" alt="" />
+              </button>
             </form>
-
-            <button class="content__button">
-              <img src="images/icon-arrow.svg" alt="" />
-            </button>
+            <p class="content__error-text"></p>
           </div>
+          <footer class="attribution">
+            Challenge by
+            <a
+              class="attribution__link"
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by
+            <a
+              class="attribution__link"
+              href="https://github.com/rafo38kh"
+              target="_blank"
+              >rafo38kh</a
+            >.
+          </footer>
         </div>
       </div>
     </main>
-
-    <footer class="attribution">
-      Challenge by
-      <a
-        class="attribution__link"
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a
-        class="attribution__link"
-        href="https://github.com/rafo38kh"
-        target="_blank"
-        >rafo38kh</a
-      >.
-    </footer>
   </body>
 </html>

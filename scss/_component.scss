@@ -1,28 +1,84 @@
+.wrapper {
+  padding: 3rem;
+  @media (min-width: 650px) {
+    padding: 6rem;
+  }
+  @media (min-width: 1140px) {
+    padding: 6rem 16rem;
+  }
+}
 .content {
+  @media (min-width: 1140px) {
+    display: grid;
+    grid-template-columns: auto 61rem;
+    grid-auto-rows: auto;
+    min-height: 100vh;
+  }
+
   &__logo {
-    height: 2rem;
-    margin: 3rem;
-    margin-right: 25rem;
+    width: 16rem;
+    @media (min-width: 650px) {
+      width: 26rem;
+    }
+    @media (min-width: 1140px) {
+      grid-column: 1 / 2;
+      width: 48rem;
+    }
   }
 
   &__picture {
     background-image: url("../images/hero-mobile.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: top center;
     padding: 12.5rem;
     width: 100%;
+    margin-bottom: 4rem;
+    @media (min-width: 650px) {
+      background-image: url("../images/hero-desktop.jpg");
+      background-size: cover;
+      background-position: top 10% left;
+      padding: 20rem;
+    }
+
+    @media (min-width: 1140px) {
+      grid-row: 1 / 3;
+      grid-column: 2 / 2;
+      margin-bottom: 0;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 53vh;
   }
 
   &__box {
+    text-align: center;
+
+    @media (min-width: 1140px) {
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
   }
 
   &__heading {
-    text-align: center;
     font-size: 3.8rem;
     text-transform: uppercase;
-    padding-top: 6rem;
+    color: $color-primary--dark;
     letter-spacing: 1.3rem;
     line-height: 4rem;
+    @media (min-width: 650px) {
+      font-size: 6.8rem;
+      letter-spacing: 1.5rem;
+      line-height: 8rem;
+    }
+    @media (min-width: 1140px) {
+      line-height: 7rem;
+    }
   }
 
   &__span {
@@ -33,27 +89,71 @@
 
   &__paragraph {
     color: $color-primary--light;
-    padding: 4rem 3rem;
-    padding-top: 2rem;
-    text-align: center;
+
     font-size: 1.4rem;
-    line-height: 2.3rem;
+    line-height: 2.1rem;
+    margin-top: 2rem;
+    margin-bottom: 2.6rem;
+    @media (min-width: 650px) {
+      width: 40rem;
+      margin: 4rem auto 4.6rem auto;
+    }
+    @media (min-width: 1140px) {
+      font-size: 1.6rem;
+      margin: 2rem 0 4.6rem 0;
+      line-height: 3rem;
+      width: 43rem;
+    }
   }
 
   &__email-box {
+    width: 100%;
     display: flex;
     position: relative;
   }
 
   &__email {
-    outline: none;
     border-radius: 3rem;
-    padding: 1.5rem 4rem;
     border: 0.1rem solid $color-primary--light;
+    margin: 0 auto;
+    padding: 1.4rem;
+    background: transparent;
+    color: $color-primary--light;
+    width: 100%;
+    @media (min-width: 1140px) {
+      margin: 0;
+      padding: 1.8rem;
+      width: 88%;
+    }
+  }
+
+  &__error {
+    display: none;
+    position: absolute;
+    right: 25%;
+    top: 22%;
+    @media (min-width: 650px) {
+      right: 15%;
+    }
+
+    @media (min-width: 1140px) {
+      right: 35%;
+    }
   }
 
   &__button {
     position: absolute;
+    background: $gradient-primary;
+    border: none;
+    right: 0;
+    padding: 1.1rem;
+    border-radius: 3rem;
+    width: 6.5rem;
+    @media (min-width: 1140px) {
+      width: 9.5rem;
+      padding: 1.5rem;
+      right: 12%;
+    }
   }
 }
 
@@ -65,13 +165,13 @@
 
   &__link:link,
   &__link:visited {
-    //   color: $color-primary--Blue;
+    color: $color-primary;
     text-transform: uppercase;
     transition: all 0.2s;
   }
 
   &__link:hover,
   &__link:active {
-    //   color: $color-primary--Cyan;
+    color: $color-primary--light;
   }
 }
