@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #fff5f5;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center; }
+
+.container {
+  width: 100%;
+  min-width: 350px; }
+
+.content__logo {
+  height: 2rem;
+  margin: 3rem;
+  margin-right: 25rem; }
+
+.content__picture {
+  background-image: url("../images/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 12.5rem;
+  width: 100%; }
+
+.content__heading {
+  text-align: center;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  padding-top: 6rem;
+  letter-spacing: 1.3rem;
+  line-height: 4rem; }
+
+.content__span {
+  color: #ce9797;
+  font-weight: 300;
+  display: block; }
+
+.content__paragraph {
+  color: #ce9797;
+  padding: 4rem 3rem;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.3rem; }
+
+.content__email-box {
+  display: flex;
+  position: relative; }
+
+.content__email {
+  outline: none;
+  border-radius: 3rem;
+  padding: 1.5rem 4rem;
+  border: 0.1rem solid #ce9797; }
+
+.content__button {
+  position: absolute; }
+
+.attribution {
+  color: #000;
+  font-size: 1rem;
+  text-align: center;
+  margin: 2rem 0 1rem 0; }
+  .attribution__link:link, .attribution__link:visited {
+    text-transform: uppercase;
+    transition: all 0.2s; }

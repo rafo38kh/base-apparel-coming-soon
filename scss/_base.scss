@@ -1,0 +1,32 @@
+$color-primary--light: hsl(0, 36%, 70%);
+$color-primary: hsl(0, 93%, 68%);
+$color-primary--dark: hsl(0, 6%, 24%);
+
+$color-secondary-light: hsl(0, 0%, 100%);
+$color-secondary: hsl(0, 100%, 98%);
+
+$color-tertiary-light: hsl(0, 80%, 86%);
+$color-tertiary: hsl(0, 74%, 74%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: $color-secondary;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+}
