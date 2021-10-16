@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -38,22 +37,29 @@
               store. Add your email below to stay up-to-date with announcements
               and our launch deals.
             </p>
-            <form action="#" class="content__email-box">
+            <form action="#" class="content__email-box js-form">
               <input
-                type="email"
-                class="content__email"
+                name="email"
+                class="content__email js-input"
                 placeholder="Email Address"
+                aria-label="Email input"
               />
               <img
-                class="content__error"
+                class="content__error js__error-icon"
                 src="./images/icon-error.svg"
-                alt=""
+                aria-hidden="true"
               />
-              <button class="content__button" type="submit" value="Submit">
-                <img src="images/icon-arrow.svg" alt="" />
+              <button
+                class="content__button"
+                aria-label="Submit button"
+                type="submit"
+                value="Submit"
+              >
+                <img src="./images/icon-arrow.svg" aria-hidden="true" />
               </button>
             </form>
-            <p class="content__error-text"></p>
+
+            <p class="content__error-text js__error-text"></p>
           </div>
           <footer class="attribution">
             Challenge by

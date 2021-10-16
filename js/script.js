@@ -1,7 +1,9 @@
-const form = document.querySelector(".content__email-box");
-const emailInput = document.querySelector(".content__email");
-const errorText = document.querySelector(".content__error-text");
-const errorIcon = document.querySelector(".content__error");
+const form = document.querySelector(".js-form");
+const emailInput = document.querySelector(".js-input");
+const errorText = document.querySelector(".js__error-text");
+const errorIcon = document.querySelector(".js__error-icon");
+
+console.log(errorIcon);
 
 const valiedateEmail = function (input) {
   const reg =

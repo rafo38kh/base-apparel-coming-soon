@@ -104,7 +104,9 @@ body {
       line-height: 8rem; } }
   @media (min-width: 1140px) {
     .content__heading {
-      line-height: 7rem; } }
+      font-size: 6.2rem;
+      line-height: 7rem;
+      letter-spacing: 2rem; } }
 
 .content__span {
   color: #ce9797;
@@ -125,7 +127,7 @@ body {
     .content__paragraph {
       font-size: 1.6rem;
       margin: 2rem 0 4.6rem 0;
-      line-height: 3rem;
+      line-height: 2.8rem;
       width: 43rem; } }
 
 .content__email-box {
@@ -138,6 +140,7 @@ body {
   border: 0.1rem solid #ce9797;
   margin: 0 auto;
   padding: 1.4rem;
+  padding-left: 3rem;
   background: transparent;
   color: #ce9797;
   width: 100%; }
@@ -154,24 +157,46 @@ body {
   top: 22%; }
   @media (min-width: 650px) {
     .content__error {
-      right: 15%; } }
+      right: 25%; } }
   @media (min-width: 1140px) {
     .content__error {
       right: 35%; } }
 
+.content__error-text {
+  text-align: left;
+  color: #f96262;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding-left: 2.5rem; }
+  @media (min-width: 900px) {
+    .content__error-text {
+      padding-left: 3rem; } }
+
 .content__button {
-  position: absolute;
-  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  width: 20%;
+  height: 100%;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  outline: none;
   border: none;
-  right: 0;
-  padding: 1.1rem;
-  border-radius: 3rem;
-  width: 6.5rem; }
+  border-radius: 5rem;
+  box-shadow: rgba(249, 98, 98, 0.5) 0px 15px 20px;
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  transition: all 0.2s; }
+  @media (hover: hover) {
+    .content__button:hover {
+      cursor: pointer;
+      background-image: linear-gradient(135deg, #f1dada, #f7bbbb); } }
+  @media (min-width: 650px) {
+    .content__button {
+      width: 22%;
+      right: 0rem; } }
   @media (min-width: 1140px) {
     .content__button {
-      width: 9.5rem;
-      padding: 1.5rem;
-      right: 12%; } }
+      width: 22%;
+      right: 4.5rem; } }
 
 .attribution {
   color: #000;

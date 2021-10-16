@@ -77,7 +77,9 @@
       line-height: 8rem;
     }
     @media (min-width: 1140px) {
+      font-size: 6.2rem;
       line-height: 7rem;
+      letter-spacing: 2rem;
     }
   }
 
@@ -101,7 +103,7 @@
     @media (min-width: 1140px) {
       font-size: 1.6rem;
       margin: 2rem 0 4.6rem 0;
-      line-height: 3rem;
+      line-height: 2.8rem;
       width: 43rem;
     }
   }
@@ -117,6 +119,7 @@
     border: 0.1rem solid $color-primary--light;
     margin: 0 auto;
     padding: 1.4rem;
+    padding-left: 3rem;
     background: transparent;
     color: $color-primary--light;
     width: 100%;
@@ -133,26 +136,51 @@
     right: 25%;
     top: 22%;
     @media (min-width: 650px) {
-      right: 15%;
+      right: 25%;
     }
 
     @media (min-width: 1140px) {
       right: 35%;
     }
   }
+  &__error-text {
+    text-align: left;
+    color: $color-primary;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    padding-left: 2.5rem;
 
+    @media (min-width: 900px) {
+      padding-left: 3rem;
+    }
+  }
   &__button {
-    position: absolute;
-    background: $gradient-primary;
+    width: 20%;
+    height: 100%;
+    background-image: $gradient-primary;
+    outline: none;
     border: none;
-    right: 0;
-    padding: 1.1rem;
-    border-radius: 3rem;
-    width: 6.5rem;
+    border-radius: 5rem;
+    box-shadow: rgba($color-primary, 0.5) 0px 15px 20px;
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    transition: all 0.2s;
+
+    @media (hover: hover) {
+      &:hover {
+        cursor: pointer;
+        background-image: $gradient-primary--hover;
+      }
+    }
+    @media (min-width: 650px) {
+      width: 22%;
+      right: 0rem;
+    }
     @media (min-width: 1140px) {
-      width: 9.5rem;
-      padding: 1.5rem;
-      right: 12%;
+      width: 22%;
+      right: 4.5rem;
     }
   }
 }
